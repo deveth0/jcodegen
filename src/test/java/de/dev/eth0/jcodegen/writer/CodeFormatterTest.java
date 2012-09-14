@@ -11,7 +11,7 @@ import org.junit.Test;
 
 /**
  *
- * @author amuthmann
+ * @author deveth0
  */
 public class CodeFormatterTest extends ClassTest {
 
