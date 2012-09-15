@@ -38,6 +38,11 @@ public class Enumeration extends AbstractStandaloneElement<Enumeration> implemen
     super(pPackage, "enum", pName);
   }
 
+  /**
+   * Adds a {@link EnumerationEntry} to the enumeration
+   * @param pEntry
+   * @return 
+   */
   public Enumeration addEntry(EnumerationEntry pEntry) {
     if (pEntry != null) {
       mEntries.add(pEntry);
@@ -45,6 +50,10 @@ public class Enumeration extends AbstractStandaloneElement<Enumeration> implemen
     return this;
   }
 
+  /**
+   * Returns an unmodifable set with all entries
+   * @return 
+   */
   public Set<EnumerationEntry> getEntries() {
     return Collections.unmodifiableSet(mEntries);
   }

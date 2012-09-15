@@ -15,10 +15,21 @@ public class EnumerationEntry extends AbstractBasicElementWithComments<Enumerati
   private final List<Object> mParameters = new ArrayList<Object>();
   private final String mName;
 
+  /**
+   * Constructor for an enumerationentry with a name
+   *
+   * @param pName
+   */
   public EnumerationEntry(String pName) {
     this.mName = pName;
   }
 
+  /**
+   * Constructor for an enumerationentry with a name and list of parameters
+   *
+   * @param pName
+   * @param pParameters
+   */
   public EnumerationEntry(String pName, Object... pParameters) {
     this(pName);
     this.mParameters.addAll(Arrays.asList(pParameters));
@@ -37,6 +48,11 @@ public class EnumerationEntry extends AbstractBasicElementWithComments<Enumerati
     return this;
   }
 
+  /**
+   * Adds the given String as parameter. Note: the string is auto-escaped ("String")
+   * @param pParameter
+   * @return 
+   */
   public EnumerationEntry addParameter(String pParameter) {
     if (pParameter != null) {
       mParameters.add("\"" + pParameter + "\"");
@@ -44,6 +60,10 @@ public class EnumerationEntry extends AbstractBasicElementWithComments<Enumerati
     return this;
   }
 
+  /**
+   * Returns an unmodifable list with all paremeters
+   * @return 
+   */
   public List<Object> getParameters() {
     return Collections.unmodifiableList(mParameters);
   }
