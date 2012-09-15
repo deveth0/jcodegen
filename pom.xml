@@ -30,7 +30,7 @@
   
   <scm>
     <connection>scm:svn:https://jcodegen.googlecode.com/svn/trunk/</connection>
-    <developerConnection>scm:svn:http://jcodegen.googlecode.com/svn/trunk/</developerConnection>
+    <developerConnection>scm:svn:https://jcodegen.googlecode.com/svn/trunk/</developerConnection>
     <url>https://jcodegen.googlecode.com/svn/trunk/</url>
   </scm>
   
