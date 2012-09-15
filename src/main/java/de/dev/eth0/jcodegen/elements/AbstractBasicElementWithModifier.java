@@ -27,7 +27,7 @@ public abstract class AbstractBasicElementWithModifier<T extends AbstractBasicEl
     this.mType = pType;
   }
 
-  public AbstractBasicElementWithModifier(java.lang.Class pType, String pName) {
+  public AbstractBasicElementWithModifier(Class pType, String pName) {
     this.mType = pType.getSimpleName();
     this.mName = pName;
   }

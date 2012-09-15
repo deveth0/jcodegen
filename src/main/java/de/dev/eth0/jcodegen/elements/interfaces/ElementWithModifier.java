@@ -6,7 +6,7 @@ import de.dev.eth0.jcodegen.constants.Modifier;
 import java.util.Set;
 
 /**
- *
+ * Interface for Elements which use modifieres (e.g. public or private)
  * @author deveth0
  */
 public interface ElementWithModifier {
@@ -15,7 +15,7 @@ public interface ElementWithModifier {
    * Adds a modifier
    *
    * @param pModifier
-   * @return 
+   * @return the element (this)
    */
   ElementWithModifier addModifier(Modifier pModifier);
 

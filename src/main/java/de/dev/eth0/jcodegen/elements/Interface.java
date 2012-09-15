@@ -10,7 +10,7 @@ import de.dev.eth0.jcodegen.elements.interfaces.StandaloneElement;
  *
  * @author deveth0
  */
-public class Interface extends AbstractBasicElementWithModifier<Class> implements ComplexElement, StandaloneElement {
+public class Interface extends AbstractBasicElementWithModifier<JavaClass> implements ComplexElement, StandaloneElement {
 
   private String mPackage;
   private String mExtends;

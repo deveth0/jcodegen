@@ -36,11 +36,11 @@ public abstract class AbstractStandaloneElement<T extends AbstractStandaloneElem
     }
   }
 
-  public AbstractStandaloneElement(String pPackage, java.lang.Class pType, String pName) {
+  public AbstractStandaloneElement(String pPackage, Class pType, String pName) {
     this(pPackage, pType, pName, (String[])null);
   }
 
-  public AbstractStandaloneElement(String pPackage, java.lang.Class pType, String pName, String... pImplements) {
+  public AbstractStandaloneElement(String pPackage, Class pType, String pName, String... pImplements) {
     super(pType, pName);
     this.mPackage = pPackage;
     if (pImplements != null && pImplements.length >0) {
@@ -59,13 +59,13 @@ public abstract class AbstractStandaloneElement<T extends AbstractStandaloneElem
     return ret;
   }
 
-  public Field createField(java.lang.Class pType, String pName) {
+  public Field createField(Class pType, String pName) {
     Field ret = new Field(pType, pName);
     mFields.add(ret);
     return ret;
   }
 
-  public Field createField(java.lang.Class pType, String pName, String pValue) {
+  public Field createField(Class pType, String pName, String pValue) {
     Field ret = new Field(pType, pName, pValue);
     mFields.add(ret);
     return ret;

@@ -17,7 +17,7 @@ public class Parameter {
     this.mName = pName;
   }
 
-  public Parameter(java.lang.Class pType, String pName) {
+  public Parameter(Class pType, String pName) {
     this.mType = pType.getSimpleName();
     this.mName = pName;
   }

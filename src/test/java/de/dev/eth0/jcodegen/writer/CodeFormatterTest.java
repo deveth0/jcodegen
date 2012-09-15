@@ -5,7 +5,7 @@ package de.dev.eth0.jcodegen.writer;
 import de.dev.eth0.jcodegen.writer.CodeFormatter;
 import de.dev.eth0.jcodegen.constants.Modifier;
 import de.dev.eth0.jcodegen.elements.ClassTest;
-import de.dev.eth0.jcodegen.elements.Class;
+import de.dev.eth0.jcodegen.elements.JavaClass;
 import de.dev.eth0.jcodegen.elements.Method;
 import org.junit.Test;
 
@@ -23,7 +23,7 @@ public class CodeFormatterTest extends ClassTest {
    */
   @Test
   public void testFormat() {
-    Class clazz = new Class(PACKAGE, NAME);
+    JavaClass clazz = new JavaClass(PACKAGE, NAME);
     clazz.addModifier(Modifier.PUBLIC);
     clazz.addField(mField1);
     clazz.addField(mField2);

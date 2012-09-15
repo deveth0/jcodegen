@@ -10,20 +10,20 @@ import org.apache.commons.lang.StringUtils;
  *
  * @author deveth0
  */
-public class Class extends AbstractStandaloneElement<Class> implements ComplexElement {
+public class JavaClass extends AbstractStandaloneElement<JavaClass> implements ComplexElement {
 
   private String mExtends;
 
-  public Class(String pPackage, String pName) {
+  public JavaClass(String pPackage, String pName) {
     this(pPackage, pName, null, (String[])null);
   }
 
-  public Class(String pPackage, String pName, String pExtends) {
+  public JavaClass(String pPackage, String pName, String pExtends) {
     this(pPackage, pName);
     this.mExtends = pExtends;
   }
 
-  public Class(String pPackage, String pName, String pExtends, String... pImplements) {
+  public JavaClass(String pPackage, String pName, String pExtends, String... pImplements) {
     super(pPackage, "class", pName, pImplements);
     this.mExtends = pExtends;
   }

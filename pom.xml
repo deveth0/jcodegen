@@ -23,11 +23,6 @@
     </license>
   </licenses>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <netbeans.hint.license>cddl</netbeans.hint.license>
-  </properties>
-  
   <scm>
     <connection>scm:svn:https://jcodegen.googlecode.com/svn/trunk/</connection>
     <developerConnection>scm:svn:https://jcodegen.googlecode.com/svn/trunk/</developerConnection>
@@ -128,4 +123,9 @@
       <type>jar</type>
     </dependency>
   </dependencies>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <netbeans.hint.license>cddl</netbeans.hint.license>
+  </properties>
 </project>

@@ -30,7 +30,7 @@ public class FileWriter {
   }
 
   /**
-   *
+   * Writes out the given Element to the target path
    * @param pPath
    * @param pElement
    * @throws IOException
@@ -40,7 +40,7 @@ public class FileWriter {
   }
 
   /**
-   *
+   * Writes out the given Element to the target path and processes the given {@link Options}
    * @param pPath
    * @param pElement
    * @param pOption

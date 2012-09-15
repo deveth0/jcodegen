@@ -18,7 +18,7 @@ public class Method extends AbstractBasicElementWithModifier<Method> implements 
   private final Set<Parameter> mParameter = new LinkedHashSet<Parameter>();
   private final Set<String> mContent = new LinkedHashSet<String>();
 
-  public Method(java.lang.Class pType, String pName) {
+  public Method(Class pType, String pName) {
     super(pType, pName);
   }
 
@@ -26,7 +26,7 @@ public class Method extends AbstractBasicElementWithModifier<Method> implements 
     super(pType, pName);
   }
 
-  public Method(java.lang.Class pType, String pName, Parameter... pParameters) {
+  public Method(Class pType, String pName, Parameter... pParameters) {
     this(pType, pName);
     this.mParameter.addAll(Arrays.asList(pParameters));
   }
@@ -45,7 +45,7 @@ public class Method extends AbstractBasicElementWithModifier<Method> implements 
     return ret;
   }
 
-  public static Method getGetterMethod(java.lang.Class pClass, String pName) {
+  public static Method getGetterMethod(Class pClass, String pName) {
     return Method.getGetterMethod(pClass.getSimpleName(), pName);
   }
 

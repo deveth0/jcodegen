@@ -17,7 +17,7 @@ public class Field extends AbstractBasicElementWithModifier<Field> {
     super(pType, pName);
   }
 
-  public Field(java.lang.Class pType, String pName) {
+  public Field(Class pType, String pName) {
     super(pType, pName);
   }
 
@@ -26,7 +26,7 @@ public class Field extends AbstractBasicElementWithModifier<Field> {
     this.mValue = pValue;
   }
 
-  public Field(java.lang.Class pType, String pName, String pValue) {
+  public Field(Class pType, String pName, String pValue) {
     this(pType, pName);
     this.mValue = pValue;
   }

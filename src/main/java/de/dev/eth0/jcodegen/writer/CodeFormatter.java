@@ -5,7 +5,7 @@ package de.dev.eth0.jcodegen.writer;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * Helper class to format code
+ * Helper class to format code. Basically it counts the opening and closing brackets and adds blank spaces before the code
  *
  * @author deveth0
  */
@@ -13,6 +13,23 @@ public class CodeFormatter {
 
   private String mLineIndent = "  ";
 
+  /**
+   * Sets the number of blank spaces in front of the code. Default: 2
+   * @param pCount 
+   */
+  public void setLineIndent(int pCount) {
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < pCount; i++) {
+      sb.append(" ");
+    }
+    mLineIndent = sb.toString();
+  }
+
+  /**
+   * Returns the given code in a formated version
+   * @param pUnformatedCode
+   * @return formated code
+   */
   public String format(String pUnformatedCode) {
     if (StringUtils.isBlank(pUnformatedCode)) {
       throw new IllegalArgumentException();
@@ -33,10 +50,10 @@ public class CodeFormatter {
   }
 
   private String getIndent(int pCount) {
-    String ret = "";
+    StringBuilder sb = new StringBuilder();
     for (int i = 0; i < pCount; i++) {
-      ret += mLineIndent;
+      sb.append(mLineIndent);
     }
-    return ret;
+    return sb.toString();
   }
 }

@@ -3,7 +3,7 @@
 package de.dev.eth0.jcodegen.elements;
 
 import de.dev.eth0.jcodegen.elements.Field;
-import de.dev.eth0.jcodegen.elements.Class;
+import de.dev.eth0.jcodegen.elements.JavaClass;
 import de.dev.eth0.jcodegen.constants.Modifier;
 import junit.framework.TestCase;
 
@@ -32,7 +32,7 @@ public class ClassTest extends TestCase {
   }
 
   public void testClass() {
-    Class clazz = new Class(PACKAGE, NAME);
+    JavaClass clazz = new JavaClass(PACKAGE, NAME);
     clazz.addModifier(Modifier.PUBLIC);
     assertEquals("package " + PACKAGE + ";\n\n"
             + "public class " + NAME + " {\n"
@@ -40,7 +40,7 @@ public class ClassTest extends TestCase {
   }
 
   public void testClassWithExtends() {
-    Class clazz = new Class(PACKAGE, NAME, EXTENDS);
+    JavaClass clazz = new JavaClass(PACKAGE, NAME, EXTENDS);
     clazz.addModifier(Modifier.PUBLIC);
     assertEquals("package " + PACKAGE + ";\n\n"
             + "public class " + NAME + " extends " + EXTENDS + " {\n"
@@ -48,7 +48,7 @@ public class ClassTest extends TestCase {
   }
 
   public void testClassWithImplements() {
-    Class clazz = new Class(PACKAGE, NAME, null, IMPLEMENTS);
+    JavaClass clazz = new JavaClass(PACKAGE, NAME, null, IMPLEMENTS);
     clazz.addModifier(Modifier.PUBLIC);
     assertEquals("package " + PACKAGE + ";\n\n"
             + "public class " + NAME + " implements "
@@ -57,7 +57,7 @@ public class ClassTest extends TestCase {
   }
 
   public void testClassWithExtendsAndImplements() {
-    Class clazz = new Class(PACKAGE, NAME, EXTENDS, IMPLEMENTS);
+    JavaClass clazz = new JavaClass(PACKAGE, NAME, EXTENDS, IMPLEMENTS);
     clazz.addModifier(Modifier.PUBLIC);
     assertEquals("package " + PACKAGE + ";\n\n"
             + "public class " + NAME + " extends " + EXTENDS + " implements "
@@ -66,7 +66,7 @@ public class ClassTest extends TestCase {
   }
 
   public void testClassWithFields() {
-    Class clazz = new Class(PACKAGE, NAME);
+    JavaClass clazz = new JavaClass(PACKAGE, NAME);
     clazz.addModifier(Modifier.PUBLIC);
     clazz.addField(mField1);
     clazz.addField(mField2);
