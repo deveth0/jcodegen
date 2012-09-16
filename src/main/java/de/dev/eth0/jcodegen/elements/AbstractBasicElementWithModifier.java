@@ -7,7 +7,7 @@ import de.dev.eth0.jcodegen.constants.Modifier;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Abstract Element with modifier and comment

@@ -2,7 +2,7 @@
 //$Id$
 package de.dev.eth0.jcodegen.writer;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Helper class to format code. Basically it counts the opening and closing brackets and adds blank spaces before the code

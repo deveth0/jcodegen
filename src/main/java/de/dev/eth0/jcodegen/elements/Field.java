@@ -2,7 +2,7 @@
 //$Id$
 package de.dev.eth0.jcodegen.elements;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * A Field

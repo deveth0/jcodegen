@@ -5,7 +5,7 @@ package de.dev.eth0.jcodegen.writer;
 import de.dev.eth0.jcodegen.elements.interfaces.StandaloneElement;
 import java.io.File;
 import java.io.IOException;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Class to write out standalone elements to a file

@@ -3,7 +3,7 @@
 package de.dev.eth0.jcodegen.elements;
 
 import de.dev.eth0.jcodegen.elements.interfaces.ComplexElement;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * A class

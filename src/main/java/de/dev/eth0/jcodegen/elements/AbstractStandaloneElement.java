@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * An element whcih can be used as standalone (eg. class, interface or enum)
