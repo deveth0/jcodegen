@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.dev-eth0</groupId>
   <artifactId>jCodeGen</artifactId>
-  <version>0.11-SNAPSHOT</version>
+  <version>0.11</version>
   <packaging>jar</packaging>
 
   <name>jCodeGen</name>
@@ -24,9 +24,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:svn:https://jcodegen.googlecode.com/svn/trunk/</connection>
-    <developerConnection>scm:svn:https://jcodegen.googlecode.com/svn/trunk/</developerConnection>
-    <url>https://jcodegen.googlecode.com/svn/trunk/</url>
+    <connection>scm:svn:https://jcodegen.googlecode.com/svn/tags/jCodeGen-0.11</connection>
+    <developerConnection>scm:svn:https://jcodegen.googlecode.com/svn/tags/jCodeGen-0.11</developerConnection>
+    <url>https://jcodegen.googlecode.com/svn/tags/jCodeGen-0.11</url>
   </scm>
   
   <developers>
